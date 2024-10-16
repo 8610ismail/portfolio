@@ -1,43 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="img/curriculum.png" type="image/x-icon">
-    <title>Portfolio Website</title>
+    <link rel="shortcut icon" href="img/curriculum.png" type="image/x-icon">
+    <title>Ismail Portfolio</title>
+    <link rel="stylesheet" href="style.css">  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
 </head>
-<body>
-    <header>
-        <a href="#" class="logo">Ismail Basha</a>
 
-        <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="/about.html" >About</a>
-            <a href="/skill.html" >Skills</a>
-            <a href="/education.html" >Education</a>
-            <a href="/project.html" >Projects</a>
-            <a href="/contact.html" >Contact</a>
+<body>
+    <header >
+        <a href="#" class="logo">Ismail Basha</a>
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+        <nav >
+            <nav id="nav" data-aos="fade-right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <ul id="ham-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="/img/Picsart_23-11-02_20-59-09-350~2.jpg" alt="">
+    <section class="home" id="home" >
+        <div class="child">
+            <img src="img/Picsart_23-11-02_20-59-09-350~2.jpg" alt="error">
         </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Ismail</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
-            <div class="social-icons">
+        <div class="child" data-aos="fade-up">
+            <h1>Hi! I am <span>Mohammed Ismail Basha</span></h1>
+            <h3 class="typing-text">I'm a <span>Front-End Developer</span></h3>
+            <p><span>Mohammed Ismail Basha . A </span> I am a passionate Front-End Web Developer with expertise in
+                HTML5, CSS3, JavaScript ES6, Bootstrap, and React.js. With a background in B-E - ECE C.Abdul Hakeem
+                College, Melvishram, I am currently enhancing my skills at AspiraSys Skill Hub. I have experience
+                working on
+                various projects, including e-commerce websites and responsive web applications, and I am committed to
+                building high-quality, user-centric web solutions. My goal is to Continuously learn and innovate,
+                leveraging modern technologies to create seamless and engaging web experiences.</p>
+            <div class="social-icons" >
                 <a href="https://www.linkedin.com/in/ismail-basha-245b78283/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/8610ismail"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.instagram.com/mr_ismxil_bxshx/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="" class="btn">Hire me</a>
+            <a href="mailto:bashaismail633@gmail.com" class="btn" data-aos="fade-up">Hire me</a>
         </div>
     </section>
+    <h1 class="l" data-aos="fade-right">About</h1>
+    <section class="about" id="about">
+        <div class="child" data-aos="fade-up">
+            <h1>Hi! I am <span>Ismail Basha</span> </h1>
+            <p>I am a passionate Front-End Web Developer with expertise in HTML5, CSS3, JavaScript ES6, Bootstrap, and
+                React.js. With a background in B-E - ECE C.Abdul Hakeem
+                College, Melvishram, I am currently enhancing my
+                skills at AspiraSys Skill Hub. I have experience working on various projects, including e-commerce
+                websites and responsive web applications, and I am committed to building high-quality, user-centric web
+                solutions. My goal is to Continuously learn and innovate, leveraging modern technologies to create
+                seamless and engaging web experiences.</p>
+                <a href="" class="btn" data-aos="fade-up">Download CV</a>
+                <!-- <a href="mailto:bashaismail633@gmail.com" class="btn" data-aos="fade-up">Hire me</a> -->
+            </div>
+            <div class="child">
+            <img src="img/Picsart_23-11-02_20-59-09-350~2.jpg" alt="error">
+        </div>
+    </section>
+    <h1 class="l" data-aos="fade-right">Skills</h1>
+    <section class="skills" id="skills" data-aos="fade-up">
+        <div class="child">
+            <img src="img/html1.webp" alt="error">
+        </div>
+        <div class="child">
+            <img src="img/css1.webp" alt="error">
+        </div>
+        <div class="child">
+            <img src="img/bootstrap3.png" alt="error">
+        </div>
+        <div class="child">
+            <img src="img/JS4.png" alt="error">
+        </div>
+        <div class="child">
+            <img src="img/github5.png" alt="error">
+        </div>
+        <div class="child">
+            <img src="img/sql6.png" alt="error">
+        </div>
+    </section>
+    <h1 class="l" data-aos="fade-up">Education</h1>
+    <section class="education">
+        <div class="education-about" id="education" data-aos="fade-right">
+            <div class="education-contant">
+                <h2>
+                    Primary Education
+                </h2>
+                <p>
+                    2006-2013
+                </p>
+
+            </div>
+            <div class="education-contant">
+                <h2>
+                    Higher Education
+                </h2>
+                <p>
+                    2013-2020
+                </p>
+
+            </div>
+            <div class="education-contant">
+                <h2>
+                    B.E-(ECE) Graduate
+                </h2>
+                <p>
+                    2020-2024
+                </p>
+
+            </div>
+            <div class="education-contant">
+                <h2>
+                    Web Development Course
+                </h2>
+                <p>
+                    2024-2024
+                </p>
+            </div>
+        </div>
+    </section>
+    <h1 class="l" data-aos="fade-up">Projects</h1>
+    <section class="projects" id="projects" data-aos="fade-up">
+        <div class="project-parent" data-aos="fade-up">
+            <div class="child" data-aos="fade-up">
+                <img src="img/Screenshot 2024-10-12 155709.png" alt="">
+                <div class="overlay">
+                    <h4><a href="https://mobilehubismail.netlify.app">MobileHub</a></h4>
+                </div>
+                <!-- <a href="">MobileHub</a> -->
+            </div>
+            <div class="child" data-aos="fade-right">
+                <img src="img/Screenshot 2024-10-01 150324.png" alt="">
+                <div class="overlay">
+                    <h4><a href="https://ismailbootstrap.netlify.app">Book Store</a></h4>
+                </div>
+            </div>
+            <div class="child">
+                <img src="img/Screenshot 2024-10-12 163612.png" alt="">
+                <div class="overlay">
+                    <h4><a href="https://ismailregform.netlify.app">Reg Form</a></h4>
+                </div>
+            </div>
+            <div class="child">
+                <img src="img/Screenshot 2024-10-12 155830.png" alt="">
+                <div class="overlay">
+                    <h4><a href="https://ismailweather.netlify.app">Weather</a></h4>
+                </div>
+            </div>
+            <div class="child">
+                <img src="img/Screenshot 2024-10-12 160022.png" alt="">
+                <div class="overlay">
+                    <h4><a href="https://ismail2.netlify.app">Snow Board</a></h4>
+                </div>
+            </div>
+            <div class="child">
+                <img src="img/Screenshot 2024-10-12 163323.png" alt="">
+                <div class="overlay">
+                    <h4><a href="https://ismail-to-do-list.netlify.app">TO DO</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="l" data-aos="fade-up">Contact</h1>
+    <section class="contact" id="contact" data-aos="fade-up">
+        <div class="child" data-aos="fade-up">
+            <h2>Get in Touch</h2>
+            <p>If you  any questions or want to connect, feel free to contact me!</p>
+            <p><i class="fa-solid fa-phone"></i> +91 86109 27422</p>
+            <p><i class="fa-solid fa-envelope"></i> bashaismail633@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Vellore, India</p>
+        </div>
+        <div class="child">
+            <form action="mailto:bashaismail633@gmail.com" method="post">
+                <input type="text" placeholder="Name">
+                <br>
+                <input type="email" placeholder="Email">
+                <br>
+                <textarea name="" id="" cols="30" rows="10">Message</textarea>
+                <br>
+                <button id="submit" >Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        Created by <a href=""> Ismail Basha </a> | &#169;2024 Rights Reserved
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 800, // values from 0 to 3000, with step 50ms
+  duration: 200, // values from 0 to 3000, with step 50ms
+  easing: 'ease-out', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
