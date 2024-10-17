@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="style.css">  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
 </head>
 
 <body>
-    <header >
+    <header id="header">
         <a href="#" class="logo">Ismail Basha</a>
         <i class="fa-solid fa-bars" id="hamburger"></i>
         <nav >
@@ -28,7 +30,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <ul id="ham-nav">
+            <ul id="ham-nav" data-aos="fade-right">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -72,7 +74,7 @@
                 websites and responsive web applications, and I am committed to building high-quality, user-centric web
                 solutions. My goal is to Continuously learn and innovate, leveraging modern technologies to create
                 seamless and engaging web experiences.</p>
-                <a href="" class="btn" data-aos="fade-up">Download CV</a>
+                <a href="" class="btn" data-aos="fade-right">Download CV</a>
                 <!-- <a href="mailto:bashaismail633@gmail.com" class="btn" data-aos="fade-up">Hire me</a> -->
             </div>
             <div class="child">
@@ -177,7 +179,7 @@
             <div class="child">
                 <img src="img/Screenshot 2024-10-12 163323.png" alt="">
                 <div class="overlay">
-                    <h4><a href="https://ismail-to-do-list.netlify.app">TO DO</a></h4>
+                    <h4><a href="https://ismail-to-do-list.netlify.app">To Do</a></h4>
                 </div>
             </div>
         </div>
@@ -210,11 +212,8 @@
     <script>
       AOS.init();
       AOS.init();
-
-// You can also pass an optional settings object
-// below listed default settings
 AOS.init({
-  // Global settings:
+
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
   initClassName: 'aos-init', // class applied after initialization

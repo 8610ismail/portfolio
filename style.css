@@ -7,7 +7,21 @@
 body {
     background-color: rgb(255, 255, 255);
     color: #000000;
+    font-family: 'Open Sans', sans-serif;
 }
+::-webkit-scrollbar{
+    background-color: #007bff;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #4b50b4;
+    border-radius: 30px;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 header {
     display: flex;
@@ -69,7 +83,7 @@ ul li a:hover {
 
 .logo {
     font-size: 20px;
-    width: 50%;
+    width: 100%;
     color:  #ffffff;
     font-weight: 200;
     cursor: pointer;
@@ -318,6 +332,7 @@ section h1 {
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
+    padding: auto;
 }
 
 .projects .project-parent {
@@ -326,6 +341,7 @@ section h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 25px;
     flex-direction: row;
     flex-wrap: wrap;
     /* background-color: aliceblue; */
@@ -509,14 +525,18 @@ footer {
 @media(max-width:600px) {
     #ham-nav {
         display: none;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
+        position: relative;
+        top: 40px;
     }
 
     #nav {
         display: none;
     }
+
+    
 
     #hamburger {
         display: flex;
@@ -525,16 +545,17 @@ footer {
         position: absolute;
         top: 30px;
         right: 20px;
+        color: #fff;
         font-size: 20px;
     }
 }
 @media(max-width:350px){
     .home .child img {
-        width: 300px;
+        width: 250px;
         height: 400px;
     }
     .about .child img {
-        width: 300px;
+        width: 250px;
         height: 400px;
     }
     .projects .child img {
