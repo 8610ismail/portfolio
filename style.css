@@ -3,11 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Trueno';
+    src: url('path-to-your-font/trueno-regular.woff2') format('woff2'),
+         url('path-to-your-font/trueno-regular.woff') format('woff'),
+         url('path-to-your-font/trueno-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 
 body {
+    font-family: 'Trueno', sans-serif;
     background-color: rgb(255, 255, 255);
     color: #000000;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 ::-webkit-scrollbar{
     background-color: #007bff;
@@ -40,9 +52,13 @@ header {
 }
 
 ul li a:hover {
-    color: #4b50b4;
-    text-decoration: underline;
+    /* color: #4b50b4; */
+    /* text-decoration: underline; */
+    border-radius: 25px;
+    background-color: #4b50b4;
     font-size: 20px;
+    padding: 5px;
+    color: #fff;
 }
 
 
