@@ -23,4 +23,17 @@ hamburger.addEventListener('click',()=>{
         header.style.height = '400px';
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('ul li a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            // Remove the active class from all links
+            links.forEach(link => link.classList.remove('active'));
+            
+            // Add the active class to the clicked link
+            this.classList.add('active');
+        });
+    });
+});
 
