@@ -536,7 +536,6 @@ footer {
         display: none;
     }
 
-    
 
     #hamburger {
         display: flex;
@@ -547,6 +546,13 @@ footer {
         right: 20px;
         color: #fff;
         font-size: 20px;
+    }
+}
+
+@media(max-width:400px){
+    .home .child img {
+        width: 250px;
+        height: 400px;
     }
 }
 @media(max-width:350px){
