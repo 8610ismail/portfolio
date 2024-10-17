@@ -559,7 +559,7 @@ footer {
         height: 400px;
     }
 }
-@media(max-width:350px){
+@media(max-width:360px){
     .home .child img {
         width: 250px;
         height: 400px;
