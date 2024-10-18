@@ -183,11 +183,13 @@ section h1 {
 .home span {
     color: #4b67b4;
 }
-.home{
+
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .child p {
     font-size: 20px;
     line-height: 30px;
@@ -323,11 +325,18 @@ section h1 {
 .education-contant:nth-child(4) {
     border-color: #dc3545;
 }
-@media(max-width:1100px){
+
+@media(max-width:1100px) {
     nav ul {
         flex-direction: column;
+        /* display: none; */
+        flex-direction: column;
         display: none;
+        position: relative;
+        right: 262px;
+        top: 60px;
     }
+
     #hamburger {
         display: flex;
         justify-content: center;
@@ -339,43 +348,48 @@ section h1 {
         font-size: 35px;
         color: #fff;
     }
-    #ham-nav {
-        display: flex;
+
+    header {
+        justify-content: center;
+        align-items: start;
+        width: 100%;
     }
+
+    /* #ham-nav {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 150px;
+        height: 100vh;
+    } */
     .logo {
         font-size: 18px;
         padding: 20px;
-        width: 250px;
+        width: 423px;
     }
-    nav{
-       display: flex;
+
+    #nav {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
     }
 }
 
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+        /* display: none; */
+        flex-direction: column;
         display: none;
-    }
-    #hamburger {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: relative;
-        left: 0;
-        font-size: 20px;
-        color: #fff;
+        right: 204px;
+        top: 60px;
     }
-    #ham-nav {
-        display: flex;
-    }
-    .logo {
-        font-size: 18px;
-        padding: 20px;
-        width: 250px;
-    }
-    nav{
-       display: none;
+    #hamburger{
+        font-size: 30px;
     }
 }
 
@@ -640,38 +654,23 @@ footer {
 }
 
 @media(max-width:600px) {
-    #ham-nav {
-        display: none;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        top: 40px;
-    }
-
-    #nav {
-        display: none;
-    }
-
-
-    #hamburger {
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        position: absolute;
-        top: 30px;
-        right: 20px;
-        color: #fff;
-        font-size: 20px;
+    nav ul{
+        right: 170px;
     }
 }
-
+@media(max-width:550px){
+    nav ul{
+        right: 150px;
+    }
+}
 @media(max-width:400px) {
     .home .child img {
         width: 250px;
         height: 400px;
     }
-
+    nav ul{
+        right: 85px;
+    }
     .about .child img {
         width: 250px;
         height: 400px;
@@ -688,12 +687,15 @@ footer {
         width: 250px;
         height: 400px;
     }
-
+    nav ul{
+        right: 50px;
+    }
     .projects .child img {
         width: 250px;
         height: 250px;
         object-fit: cover;
     }
+
 
     .projects .project-parent {
         width: 90%;
