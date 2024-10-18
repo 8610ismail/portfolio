@@ -18,9 +18,9 @@
 <body>
     <header id="header">
         <a href="#" class="logo">Ismail Basha</a>
-        <i class="fa-solid fa-bars" id="hamburger"></i>
+       
         <nav >
-            <nav id="nav" data-aos="fade-right">
+            <nav id="nav" >
                 <ul>
                     <li><a href="#home" id="active">Home</a></li>
                     <li><a href="#about" id="active">About</a></li>
@@ -30,7 +30,8 @@
                     <li><a href="#contact" id="active">Contact</a></li>
                 </ul>
             </nav>
-            <ul id="ham-nav" data-aos="fade-right">
+            <i class="fa-solid fa-bars" id="hamburger"></i>
+            <ul id="ham-nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -41,7 +42,7 @@
         </nav>
     </header>
     <section class="home" id="home" >
-        <div class="child">
+        <div class="child" data-aos="fade-right">
             <img src="img/Picsart_23-11-02_20-59-09-350~2.jpg" alt="error">
         </div>
         <div class="child" data-aos="fade-up">
@@ -50,11 +51,8 @@
             <h3 class="typing-text">I'm a <span>Front-End Developer</span></h3>
             <p><span>Mohammed Ismail Basha . A </span> I am a passionate Front-End Web Developer with expertise in
                 HTML5, CSS3, JavaScript ES6, Bootstrap, and Kotlin. With a background in B-E - ECE C.Abdul Hakeem
-                College, Melvishram, I am currently enhancing my skills at AspiraSys Skill Hub. I have experience
-                working on
-                various projects, including e-commerce websites and responsive web applications, and I am committed to
-                building high-quality, user-centric web solutions. My goal is to Continuously learn and innovate,
-                leveraging modern technologies to create seamless and engaging web experiences.</p>
+                College, Melvishram .
+                </p>
             <div class="social-icons" >
                 <a href="https://www.linkedin.com/in/ismail-basha-245b78283/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/8610ismail"><i class="fa-brands fa-github"></i></a>
@@ -65,8 +63,8 @@
             <a href="mailto:bashaismail633@gmail.com" class="btn" data-aos="fade-up">Hire me</a>
         </div>
     </section>
-    <h1 class="l" data-aos="fade-right">About</h1>
     <section class="about" id="about">
+        <h1 class="l" data-aos="fade-right" style="text-align: center;">About</h1>
         <div class="child" data-aos="fade-up">
             <h1>Hi! I am <span>Ismail Basha</span> </h1>
             <p>I am a passionate Front-End Web Developer with expertise in HTML5, CSS3, JavaScript ES6, Bootstrap, and
@@ -79,12 +77,12 @@
                 <br>
                 <a href="img/Ismail-Basha-FlowCV-Resume-20241017.pdf" class="btn" data-aos="fade-right">Download CV</a>
             </div>
-            <div class="child">
+            <div class="child" data-aos="fade-up">
             <img src="img/Picsart_23-11-02_20-59-09-350~2.jpg" alt="error">
         </div>
     </section>
-    <h1 class="l" data-aos="fade-right">Skills</h1>
     <section class="skills" id="skills" data-aos="fade-up">
+        <h1 class="l" data-aos="fade-right">Skills</h1>
         <div class="child">
             <img src="img/html1.webp" alt="error">
         </div>
@@ -104,9 +102,9 @@
             <img src="img/sql6.png" alt="error">
         </div>
     </section>
-    <h1 class="l" data-aos="fade-up">Education</h1>
-    <section class="education">
-        <div class="education-about" id="education" data-aos="fade-right">
+    <section class="education" id="education">
+        <h1 class="l" data-aos="fade-up">Education</h1>
+        <div class="education-about"  data-aos="fade-right">
             <div class="education-contant">
                 <h2>
                     Primary Education
@@ -144,8 +142,8 @@
             </div>
         </div>
     </section>
-    <h1 class="l" data-aos="fade-up">Projects</h1>
     <section class="projects" id="projects" data-aos="fade-up">
+        <h1 class="l" data-aos="fade-up">Projects</h1>
         <div class="project-parent" data-aos="fade-up">
             <div class="child" data-aos="fade-up">
                 <img src="img/Screenshot 2024-10-12 155709.png" alt="">
@@ -197,8 +195,8 @@
             </div>
         </div>
     </section>
-    <h1 class="l" data-aos="fade-up">Contact</h1>
     <section class="contact" id="contact" data-aos="fade-up">
+        <h1 class="l" data-aos="fade-up">Contact</h1>
         <div class="child" data-aos="fade-up">
             <h2>Get in Touch</h2>
             <p>If you  any questions or want to connect, feel free to contact me!</p>
@@ -212,7 +210,7 @@
                 <br>
                 <input type="email" placeholder="Email">
                 <br>
-                <textarea name="" id="" cols="30" rows="10">Message</textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                 <br>
                 <button id="submit" >Submit</button>
             </form>
@@ -240,7 +238,7 @@ AOS.init({
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 120, // offset (in px) from the original trigger point
   delay: 500, // values from 0 to 3000, with step 50ms
-  duration: 100, // values from 0 to 3000, with step 50ms
+  duration: 700, // values from 0 to 3000, with step 50ms
   easing: 'ease-out', // default easing for AOS animations
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
