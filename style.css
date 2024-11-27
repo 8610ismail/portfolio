@@ -259,6 +259,7 @@ section h1 {
 .about h1 {
     width: 100%;
     text-align: start;
+    margin-right: 10px;
 }
 
 .about span {
@@ -272,6 +273,7 @@ section h1 {
 
 .about p {
     line-height: 30px;
+    margin-right: 10px;
 }
 
 .education {
@@ -428,7 +430,9 @@ section h1 {
     transform: scale(1.1);
 
 }
-
+section #skills{
+    margin: auto;
+}
 
 .projects {
     width: 100%;
